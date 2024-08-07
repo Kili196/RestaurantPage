@@ -1,4 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Love+Light&family=Love+Ya+Like+A+Sister&family=Oswald:wght@200..700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --main-color: #ffb627;
+  --secondary-color: #e69d0d;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Mulish", "sans-serif";
+}
+
 body {
+  background-color: var(--main-color);
+}
+nav {
+  width: 100vw;
+  height: 60px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+  font-size: 1.3rem;
+  font-weight: 600;
   color: white;
-  background-color: black;
+}
+
+nav button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin-left: 5px;
+  margin-right: 5px;
 }
