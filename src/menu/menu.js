@@ -1,17 +1,17 @@
-class Menu{
-    constructor(name, price, description){
+class Menu {
+    constructor(name, price, description) {
         this.name = name;
         this.price = price;
         this.description = description;
     }
 
-    getName(){
+    getName() {
         return this.name;
     }
-    getPrice(){
+    getPrice() {
         return this.price;
     }
-    getDesc(){
+    getDesc() {
         return this.description;
     }
 }
@@ -29,9 +29,9 @@ const menuItems = [
     new Menu("Tiramisu", 7.99, "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.")
 ];
 
-function returnMenu(){
+function returnMenu() {
     let menuSection = document.createElement("SECTION");
-    menuSection.className = "menu"
+    menuSection.className = "sectionToShow"
     menuItems.forEach((menu) => {
         let menu_item = document.createElement("div")
         let headline = document.createElement("h1");
@@ -44,8 +44,8 @@ function returnMenu(){
         menuSection.appendChild(menu_item);
     })
 
-    return menuSection;s
+    return menuSection; s
 }
 
 
-export {returnMenu}
+export { returnMenu }

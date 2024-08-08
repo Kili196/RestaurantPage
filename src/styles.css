@@ -60,7 +60,7 @@ nav button:hover {
   color: white;
 }
 
-.menu {
+.sectionToShow {
   display: flex;
   flex-direction: column;
   justify-content: center;
