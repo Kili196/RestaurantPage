@@ -45,3 +45,28 @@ nav button {
 nav button:hover {
   background-color: var(--main-color);
 }
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  margin: 30px;
+}
+
+#content h2 {
+  font-size: 2rem;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+}
