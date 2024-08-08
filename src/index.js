@@ -39,11 +39,7 @@ Array.from(navBar.getElementsByTagName("button")).forEach((element) => {
     }
 })
 
-function removeAllChilds(node) {
-    while (node.firstChild) {
-        node.firstChild.remove;
-    }
-}
+
 
 
 
