@@ -29,7 +29,7 @@ const menuItems = [
     new Menu("Tiramisu", 7.99, "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.")
 ];
 
-export default function returnMenu(){
+function returnMenu(){
     let menuSection = document.createElement("SECTION");
     menuSection.className = "menu"
     menuItems.forEach((menu) => {
@@ -43,5 +43,9 @@ export default function returnMenu(){
         menu_item.appendChild(paragraph);
         menuSection.appendChild(menu_item);
     })
-    return menuSection;
+
+    return menuSection;s
 }
+
+
+export {returnMenu}
