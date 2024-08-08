@@ -1,5 +1,6 @@
 import "./styles.css"
 import { returnMenu } from "./menu/menu"
+import { showHome } from "./home/home"
 
 
 
@@ -16,6 +17,7 @@ Array.from(navBar.getElementsByTagName("button")).forEach((element) => {
         case "Home":
             element.addEventListener("click", () => {
                 mainContainer.firstChild.remove();
+                mainContainer.appendChild(showHome())
             })
             break;
         case "Menu":

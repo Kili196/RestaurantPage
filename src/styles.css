@@ -70,3 +70,7 @@ nav button:hover {
   border-radius: 20px;
   color: white;
 }
+
+.sectionToShow h1 {
+  font-size: 1.4rem;
+}

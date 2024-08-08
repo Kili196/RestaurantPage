@@ -32,6 +32,9 @@ const menuItems = [
 function returnMenu() {
     let menuSection = document.createElement("SECTION");
     menuSection.className = "sectionToShow"
+    let headline = document.createElement("h1");
+    headline.innerHTML = "MENU";
+    menuSection.appendChild(headline);
     menuItems.forEach((menu) => {
         let menu_item = document.createElement("div")
         let headline = document.createElement("h1");
@@ -44,7 +47,7 @@ function returnMenu() {
         menuSection.appendChild(menu_item);
     })
 
-    return menuSection; s
+    return menuSection;
 }
 
 
